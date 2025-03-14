@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1 class="text-2xl font-bold mb-6">Mis Asignaturas</h1>
+    <!-- Contenedor flexible para alinear el título y los enlaces -->
+    <div class="flex items-center justify-between mb-6">
+      <h1 class="text-2xl font-bold">Mis Asignaturas</h1>
+    </div>
     <SubjectCard :subjects="subjects" />
   </div>
 </template>
