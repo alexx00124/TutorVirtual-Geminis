@@ -6,5 +6,5 @@
 </template>
 
 <script setup>
-import TeacherSidebar from '@/components/dashboard/Teacher/Sidebar.vue';
+import TeacherSidebar from '~/components/dashboard/Teacher/TeacherLinks.vue';
 </script>

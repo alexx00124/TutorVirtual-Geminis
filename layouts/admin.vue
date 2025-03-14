@@ -6,5 +6,5 @@
 </template>
 
 <script setup>
-import AdminSidebar from '@/components/dashboard/Admin/Sidebar.vue';
+import AdminSidebar from '~/components/dashboard/Admin/AdminLinks.vue';
 </script>
