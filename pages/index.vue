@@ -6,5 +6,7 @@
     <NuxtLink to="teacher" target="_blank">Ver Vista Docente</NuxtLink>
     <br>
     <NuxtLink to="admin" target="_blank">Ver Vista Admin</NuxtLink>
+    <br>
+    <NuxtLink to="superadmin" target="_blank">Ver Vista SuperAdmin</NuxtLink>
   </div>
 </template>

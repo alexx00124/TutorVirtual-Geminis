@@ -1,21 +1,17 @@
 <template>
-  <CommonSidebar :links="studentLinks">
-    <slot />
+  <CommonSidebar :links="adminLinks">
+      <slot />
   </CommonSidebar>
 </template>
 
 <script setup>
 import CommonSidebar from '@/components/common/Sidebar.vue';
 
-const studentLinks = [
-  { to: '/student/Asignaturas', label: 'Dashboard', icon: 'mdi:view-dashboard' },
-  {
-    label: 'More',
-    icon: 'mdi:cog',
-    children: [
-      { to: '/student/profile', label: 'Profile', icon: 'mdi:account' },
-      { to: '/student/settings', label: 'Settings', icon: 'mdi:cog-outline' }
-    ]
-  }
-];
-</script>
+const adminLinks = [
+  { to: '/admin', label: 'Noticias', icon: 'mdi:newspaper-check' },
+  { to: '/admin/teachers', label: 'Docentes', icon: 'mdi:teach-poll' },
+  { to: '/admin/students', label: 'Estudiantes', icon: 'mdi:account-student' },
+  { to: '/admin/statistics', label: 'Estadísticas', icon: 'mdi:graph-line' },
+
+  ];
+ </script>
