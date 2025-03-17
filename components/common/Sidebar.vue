@@ -49,7 +49,7 @@
             <p class="text-xs text-gray-400 dark:text-gray-500">Carrera O Rol</p>
           </div>
           <Theme />
-          <Logout class="bg-red-500 text-white" />
+          <LogoutButton class="bg-red-500 text-white" />
         </div>
       </div>
     </aside>
@@ -63,6 +63,7 @@
 
 <script setup>
 import { ref, defineProps } from 'vue';
+import LogoutButton from '~/components/common/Logout.vue';
 
 const props = defineProps({
   links: Array

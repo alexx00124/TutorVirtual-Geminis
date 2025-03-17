@@ -2,7 +2,8 @@
     <div>
       <h1 class="text-2xl font-bold mb-4">Noticias</h1>
     </div>
-  </template>
+
+</template>
   
   <script setup>
   definePageMeta({
