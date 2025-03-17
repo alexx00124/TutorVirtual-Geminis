@@ -6,6 +6,6 @@
 
 <script setup>
 definePageMeta({
-  layout: 'student'
+  layout: 'studentwaiting'
 })
 </script>

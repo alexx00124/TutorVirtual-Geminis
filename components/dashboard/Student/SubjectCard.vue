@@ -16,6 +16,7 @@
         v-for="subject in filteredSubjects"
         :key="subject.code"
         class="hover:shadow-lg transition-shadow hover:cursor-pointer dark:hover:shadow-lg dark:hover:shadow-white"
+        @click="navigateToOverview"
       >
         <template #header>
           <div class="flex justify-between">
@@ -36,6 +37,9 @@
 
 <script setup>
 import { ref, computed } from 'vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 // Props para recibir las asignaturas
 const props = defineProps({
@@ -61,6 +65,11 @@ const filteredSubjects = computed(() => {
       subject.teacher.toLowerCase().includes(query)
   );
 });
+
+// Función para redirigir al dashboard de la asignatura
+const navigateToOverview = () => {
+  router.push('/student/newsoverview');
+};
 </script>
 
 <style scoped>
