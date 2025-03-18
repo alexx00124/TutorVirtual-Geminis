@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   // CSS Global
   css: ["~/assets/css/main.css"],
   // Modulos de funciones anadidas
-  modules: ["@nuxt/ui"],
+  modules: ["@nuxt/ui", "@nuxtjs/supabase"],
   // Preferencia de color del sistema
   colorMode: {
     preference: "system",
@@ -18,4 +18,9 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
+  supabase: {
+    url: process.env.NUXT_SUPABASE_URL,
+    key: process.env.NUXT_SUPABASE_KEY,
+    redirect: false,
+  },
 });
